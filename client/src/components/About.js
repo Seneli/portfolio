@@ -1,4 +1,5 @@
 import Menu from './Menu';
+import Typewriter from 'typewriter-effect';
 import '../styles/main.scss';
 
 // get our fontawesome imports
@@ -15,7 +16,16 @@ const About = () => {
             About <span className="text-secondary">Me</span>
           </h1>
           <h2 className="sm-heading">
-            3rd year Computer Systems Engineering student
+            <Typewriter
+              className="typewriter"
+              options={{
+                strings: [
+                  'Learn a bit about me',
+                ],
+                autoStart: true,
+                loop: true,
+              }}
+            />
           </h2>
           <div className="about-info">
             <img

@@ -1,4 +1,9 @@
-.about-bg {
+#about-bg {
+  background: $about-image;
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 0px 1000px rgba($primary-color, $background-opacity);
 }
 
 .about-info {
