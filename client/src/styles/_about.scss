@@ -1,0 +1,44 @@
+.about-bg {
+}
+
+.about-info {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-areas:
+    'bioimage bio bio'
+    'tab1     tab2  tab3';
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.bio-image {
+  grid-area: 'bioimage';
+  margin: auto;
+  border-radius: 50%;
+  border: $secondary-color 3px solid;
+  width: 25vw;
+}
+
+.bio {
+  text-align: left;
+  grid-area: bio;
+
+  .title {
+    color: $secondary-color;
+  }
+}
+
+.tab {
+  background: lighten($primary-color, 5);
+  padding: 0.5rem;
+  border-bottom: $secondary-color 5px solid;
+}
+
+.tab-1 {
+  grid-area: tab1;
+}
+.tab-2 {
+  grid-area: tab2;
+}
+.tab-3 {
+  grid-area: tab3;
+}

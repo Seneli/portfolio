@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+
+// Colors
+$primary-color: #444;
+$secondary-color: rgb(123, 175, 54);
+$show-home-image: true;
+$home-image: url(../content/brotherbear.jpeg);
+$background-opacity: 0.5;
+
+// Font
+$block-font: 'Lexend Deca';
+$font-title: 'Quicksand Bold';
+$font-bold: 'Poppins Bold';
+$font-regular: 'Poppins';
+
+$text-xxsmall: 10px;
+$text-xsmall: 14px;
+$text-small: 18px;
+$text-medium: 24px;
+$text-large: 36px;
+$text-xlarge: 64px;
+$text-xxlarge: 72px;
+$text-logo: 36px;
+
+@mixin ease-out {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-image {
+    &#bg-img {
+      background: $home-image;
+      height: 100%;
+      background-attachment: fixed;
+      background-size: cover;
+      box-shadow: inset
+        0
+        0
+        0px
+        1000px
+        rgba($primary-color, $background-opacity);
+    }
+  } @else {
+    &#bg-img {
+      background: white;
+      box-shadow: inset
+        0
+        0
+        0px
+        1000px
+        rgba($primary-color, $background-opacity);
+    }
+  }
+}
+
+@mixin footer {
+  z-index: 1;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  text-align: center;
+  background: $secondary-color;
+}
+
+// Set text color
+@function set-text-color($color) {
+  @if (lightness($color) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+// Media Query Mixins
+@mixin mediaSmallMobile {
+  @media screen and (max-width: 420px) {
+    @content;
+  }
+}
+
+@mixin mediaBigMobile {
+  @media screen and (max-width: 540px) {
+    @content;
+  }
+}
+
+@mixin mediaSm {
+  @media screen and (max-width: 660px) {
+    @content;
+  }
+}
+
+@mixin mediaMd {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaLg {
+  @media screen and (min-width: 769px) and (max-width: 899px) {
+    @content;
+  }
+}
+
+@mixin mediaXL {
+  @media screen and (min-width: 900px) and (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin mediaXXL {
+  @media screen and (min-width: 1000px) {
+    @content;
+  }
+}
