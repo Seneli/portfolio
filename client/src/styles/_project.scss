@@ -7,19 +7,19 @@
 }
 
 .project {
-  position: relative;
   background: lighten($primary-color, 5);
   padding: 25px;
-  padding-bottom: 40px;
   border-bottom: $secondary-color 5px solid;
   margin-bottom: 15px;
   border-radius: 20px 20px 0 0;
   display: grid;
+  grid-column-gap: 20px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-areas:
     'media title title'
     'media skills skills'
-    'media description description';
+    'media description description'
+    'media github github';
 
   .title {
     grid-area: title;
@@ -29,9 +29,7 @@
 
   .github {
     grid-area: github;
-    position: absolute;
     right: 25px;
-    bottom: 15px;
   }
 
   .skills {
@@ -48,6 +46,7 @@
   .image {
     grid-area: media;
     max-width: 100%;
+    margin-right: 20px;
     border-radius: 20px;
     border: $secondary-color 3px solid;
   }

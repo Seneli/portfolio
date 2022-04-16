@@ -66,9 +66,7 @@ const Projects = () => {
               return (
                 <div key={index} className="project">
                   <h3 className="title">{project.name}</h3>
-                  <div className="github">
-                    <FaGithub />
-                  </div>
+
                   <div className="skills">
                     {project.skills.map((skill, index) => {
                       return (
@@ -89,6 +87,9 @@ const Projects = () => {
                     // {project.media}
                     alt="project media"
                   />
+                  <div className="github">
+                    <FaGithub />
+                  </div>
                 </div>
               );
             })}

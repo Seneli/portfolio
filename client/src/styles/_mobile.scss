@@ -73,7 +73,8 @@
     transform: translate3d(-100%, 0, 0);
 
     .portrait {
-      //background: //set to the small url
+      border-radius: 50%;
+      border: solid 3px $secondary-color;
       width: 150px;
       height: 150px;
     }
@@ -85,7 +86,8 @@
       'title'
       'media'
       'skills'
-      'description';
+      'description'
+      'github';
 
     .image {
       margin: 10px 0;
@@ -93,6 +95,7 @@
 
     .skills {
       margin: auto;
+      text-align: center;
     }
   }
 }
