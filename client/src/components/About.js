@@ -2,9 +2,6 @@ import Menu from './Menu';
 import Typewriter from 'typewriter-effect';
 import '../styles/main.scss';
 
-// get our fontawesome imports
-import { FaLinkedin, FaGithub, FaSpotify, FaYoutube } from 'react-icons/fa';
-
 const About = () => {
   return (
     <>
@@ -21,6 +18,7 @@ const About = () => {
               options={{
                 strings: [
                   'Learn a bit about me',
+                  'As you can tell I love cartoons',
                 ],
                 autoStart: true,
                 loop: true,

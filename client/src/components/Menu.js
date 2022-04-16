@@ -1,4 +1,4 @@
-import { useState, onClick } from 'react';
+import { useState } from 'react';
 
 function Menu() {
   const [showMenu, setShowMenu] = useState(false);
@@ -43,7 +43,10 @@ function Menu() {
             </a>
           </li>
           <li className={`nav-item ${showClass}`}>
-            <a href="/resume" className="nav-link">
+            <a
+              href="https://drive.google.com/file/d/1szJtQAY7jR46DOy1x0ukWuj78PR_ZGLi/view?usp=sharing"
+              className="nav-link"
+            >
               Resume
             </a>
           </li>

@@ -78,6 +78,23 @@
       height: 150px;
     }
   }
+
+  .project {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'title'
+      'media'
+      'skills'
+      'description';
+
+    .image {
+      margin: 10px 0;
+    }
+
+    .skills {
+      margin: auto;
+    }
+  }
 }
 
 // Small

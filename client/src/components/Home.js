@@ -19,7 +19,7 @@ function Home() {
               options={{
                 strings: [
                   'Hello',
-                  'Welcome to my Website',
+                  'Welcome to my website',
                   'To learn more click the menu button ↗',
                 ],
                 autoStart: true,

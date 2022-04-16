@@ -1,7 +1,7 @@
 @import 'config';
 @import 'menu';
-@import 'mobile';
 @import 'about';
+@import 'project';
 
 * {
   box-sizing: border-box;
@@ -61,7 +61,7 @@ header {
 
 .typewriter {
   //color: $secondary-color;
-  //font-size: 20px;
+  font-size: 25px;
   margin-left: 10px;
   margin-top: 15vh;
 }
@@ -94,3 +94,5 @@ main {
 footer {
   @include footer;
 }
+
+@import 'mobile';
