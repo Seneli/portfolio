@@ -3,11 +3,37 @@
   height: 100%;
   background-attachment: fixed;
   background-size: cover;
-  box-shadow: inset 0 0 0px 1000px rgba($primary-color, $background-opacity);
+  box-shadow: inset 0 0 0px 1000px
+    rgba(lighten($primary-color, 0), $background-opacity);
 }
 
-.about {
-  color: $secondary-about-color;
+#about-home {
+  overflow: scroll;
+  padding: 4rem;
+}
+
+.column {
+  background: rgba(white, 0.5);
+  padding: 20px;
+  padding-bottom: 5vh;
+  margin-top: 1rem;
+  box-shadow: 0 5px 5px 5px rgba(black, 0.2);
+}
+
+.about-color {
+  @include ease-out();
+  color: $about-color;
+}
+
+.about-sec-color{
+
+    color: $about-second-color;
+}
+
+.dark-hover:hover {
+  .about {
+    color: darken($about-color, 20);
+  }
 }
 
 .about-info {
@@ -23,7 +49,7 @@
   grid-area: 'bioimage';
   margin: auto;
   border-radius: 50%;
-  border: $secondary-about-color 3px solid;
+  border: $about-color 3px solid;
   width: 25vw;
   height: auto;
   @include ease-out();
@@ -35,30 +61,41 @@
 }
 
 .bio {
-  text-align: left;
+  text-align: none;
   grid-area: bio;
 
   .title {
-    color: $secondary-about-color;
+    // background: rgba(white, 0.5);
+    // width: 80px;
+    text-align: none;
     font-size: 50px;
+    @include ease-out();
+  }
+
+  p {
+    background: rgba(lighten($primary-color, 15), 0.7);
+    padding: 0.5rem;
+    font-size: 18px;
+    @include ease-out();
+
+    &:hover {
+      @include ease-out();
+      background: lighten($primary-color, 15);
+      box-shadow: 0 0 5px 5px lighten($primary-color, 15);
+    }
   }
 }
 
 .tab {
-  background: rgba(lighten($primary-color, 15), 0.7);
+  background: rgba(lighten($primary-color, 10), 0.7);
   padding: 0.5rem;
-  border-bottom: $secondary-about-color 5px solid;
+  border-bottom: $about-color 5px solid;
   @include ease-out();
 
   &:hover {
     background: lighten($primary-color, 20);
     transform: scale(1.1);
     @include ease-out();
-
-    .about {
-      @include ease-out();
-      color: rgb(25, 93, 156);
-    }
   }
 }
 

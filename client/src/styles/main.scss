@@ -30,6 +30,7 @@ body {
 h1,
 h2,
 h3 {
+  //@include ease-out;
   margin: 0;
   font-weight: 400;
 
@@ -63,12 +64,16 @@ header {
   //color: $secondary-color;
   font-size: 25px;
   margin-left: 10px;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
 main {
-  padding: 4rem;
+  // padding: 4rem;
   height: 100%;
+
+  &#home{
+    padding: 4rem;
+  }
 
   .icons {
     margin-top: 1rem;
