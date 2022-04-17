@@ -3,7 +3,8 @@
 
 // Colors
 $primary-color: #444;
-$secondary-color: rgb(255, 225, 0); 
+$secondary-color: rgb(237, 214, 37);//rgb(255, 225, 0); 
+$secondary-about-color: lightblue;//rgb(158, 252, 190); 
 $footer-color: rgb(123, 175, 54);
 $show-home-image: true;
 $home-image: url(../content/brotherbear.jpeg);
@@ -27,7 +28,7 @@ $text-xxlarge: 72px;
 $text-logo: 36px;
 
 @mixin ease-out {
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @mixin background {

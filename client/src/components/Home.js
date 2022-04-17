@@ -28,7 +28,7 @@ function Home() {
             />
           </div>
           <h1 className="lg-heading">
-            Seneli <span className="text-secondary">Seneviratne</span>
+            Seneli <span className="main-text-secondary">Seneviratne</span>
           </h1>
           <h2 className="sm-heading">
             3rd year Computer Systems Engineering student

@@ -2,77 +2,77 @@ var skills = [
   {
     name: 'Figma',
     area: 'Design',
-    selected: false,
+    selected: true,
   },
   {
     name: 'Animista',
     area: 'Design',
-    selected: false,
+    selected: true,
   },
   {
     name: 'HTML & CSS',
     area: 'Front-End',
-    selected: false,
+    selected: true,
   },
   {
     name: 'React',
     area: 'Front-End',
-    selected: false,
+    selected: true,
   },
   {
     name: 'SASS',
     area: 'Front-End',
-    selected: false,
+    selected: true,
   },
   {
     name: 'Styled Components',
     area: 'Front-End',
-    selected: false,
+    selected: true,
   },
   {
     name: 'MongoDB',
     area: 'Database',
-    selected: false,
+    selected: true,
   },
   {
     name: 'AWS S3',
     area: 'Database',
-    selected: false,
+    selected: true,
   },
   {
     name: 'SQL',
     area: 'Database',
-    selected: false,
+    selected: true,
   },
   {
     name: 'Firebase',
     area: 'Database',
-    selected: false,
+    selected: true,
   },
   {
     name: 'Java',
     area: 'Language',
-    selected: false,
+    selected: true,
   },
   {
     name: 'Python',
     area: 'Language',
-    selected: false,
+    selected: true,
   },
   {
     name: 'PHP',
     area: 'Language',
-    selected: false,
+    selected: true,
   },
   {
     name: 'Javascript',
     area: 'Language',
-    selected: false,
+    selected: true,
   },
   {
     name: 'Typescript',
     area: 'Language',
-    selected: false,
+    selected: true,
   },
 ];
 
@@ -112,6 +112,24 @@ var projects = [
     media: '__',
     github: '__',
   },
+
+  {
+    name: 'Personal Website',
+    description: '__',
+    skills: ['React', 'SASS'],
+    media: '__',
+    github: '__',
+  },
 ];
 
-export { skills, projects };
+const map = {};
+
+const generateMap = (skills) => {
+  skills.forEach((skill, index) => {
+    map[skill.name] = index;
+  });
+};
+
+generateMap(skills);
+
+export { skills, projects, map };
