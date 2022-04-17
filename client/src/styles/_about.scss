@@ -49,10 +49,16 @@
   padding: 0.5rem;
   border-bottom: $secondary-about-color 5px solid;
   @include ease-out();
+
   &:hover {
-    background: lighten($primary-color, 30);
+    background: lighten($primary-color, 20);
     transform: scale(1.1);
     @include ease-out();
+
+    .about {
+      @include ease-out();
+      color: rgb(25, 93, 156);
+    }
   }
 }
 
