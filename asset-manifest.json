@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.e3254365.css",
+    "main.js": "/portfolio/static/js/main.342f6dd5.js",
+    "static/media/naruto.png": "/portfolio/static/media/naruto.c62d25575f1b8e8087e3.png",
+    "static/media/pfp.png": "/portfolio/static/media/pfp.1a313be0675dcd92d372.png",
+    "static/media/ghibli4.jpeg": "/portfolio/static/media/ghibli4.4bd1c1cd19135a844a51.jpeg",
+    "static/media/ghibli3.jpeg": "/portfolio/static/media/ghibli3.1a9cb116efe62b6cce71.jpeg",
+    "static/media/ghibli2.jpeg": "/portfolio/static/media/ghibli2.be32e6fb79cfa4686296.jpeg",
+    "index.html": "/portfolio/index.html",
+    "main.e3254365.css.map": "/portfolio/static/css/main.e3254365.css.map",
+    "main.342f6dd5.js.map": "/portfolio/static/js/main.342f6dd5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e3254365.css",
+    "static/js/main.342f6dd5.js"
+  ]
+}
