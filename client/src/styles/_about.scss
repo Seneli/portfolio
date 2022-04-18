@@ -5,6 +5,9 @@
   background-size: cover;
   box-shadow: inset 0 0 0px 1000px
     rgba(lighten($primary-color, 0), $background-opacity);
+  color: set-text-color($primary-color);
+  font-family: $block-font;
+  line-height: 1.5;
 }
 
 #about-home {
@@ -107,7 +110,8 @@
     transform: scale(1.1);
     @include ease-out();
 
-    .about-sec-color, h3 {
+    .about-sec-color,
+    h3 {
       color: $about-color;
     }
   }

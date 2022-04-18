@@ -9,7 +9,7 @@ import { FaLinkedin, FaGithub, FaSpotify, FaYoutube } from 'react-icons/fa';
 function Home() {
   return (
     <>
-      <body id="bg-img">
+      <div id="bg-img">
         <Menu />
 
         <main id="home">
@@ -20,10 +20,10 @@ function Home() {
                 strings: [
                   'Hello',
                   'Welcome to my website',
-                  'To learn more click the menu button ↗',
+                  'To learn more click the menu button ↗'
                 ],
                 autoStart: true,
-                loop: true,
+                loop: true
               }}
             />
           </div>
@@ -50,7 +50,7 @@ function Home() {
           </div>
         </main>
         <footer>Made with Love ❤️ By Seneli</footer>
-      </body>
+      </div>
     </>
   );
 }

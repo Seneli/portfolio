@@ -11,7 +11,11 @@
   height: 100vh;
 }
 
-body {
+body{
+ margin: 0; 
+}
+
+#bg-img {
   @include background;
   background: $primary-color;
   color: set-text-color($primary-color);
@@ -20,10 +24,6 @@ body {
   margin: 0;
   font-family: $block-font;
   line-height: 1.5;
-}
-
-#bg-image {
-  @include background;
 }
 
 //Headings
@@ -52,7 +52,6 @@ a {
 
 header {
   position: fixed;
-  // z-index: 2;
   width: 100%;
 }
 
@@ -61,17 +60,15 @@ header {
 }
 
 .typewriter {
-  //color: $secondary-color;
   font-size: 25px;
   margin-left: 10px;
   margin-top: 10vh;
 }
 
 main {
-  // padding: 4rem;
   height: 100%;
 
-  &#home{
+  &#home {
     padding: 4rem;
   }
 
@@ -101,6 +98,5 @@ footer {
 }
 
 @import 'mobile';
-
 
 //make name a new font

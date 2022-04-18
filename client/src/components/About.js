@@ -6,7 +6,7 @@ import '../styles/main.scss';
 const About = () => {
   return (
     <>
-      <body id="about-bg">
+      <div id="about-bg">
         <Menu />
 
         <main id="about-home">
@@ -125,7 +125,7 @@ const About = () => {
           </div>
         </main>
         <footer>Made with Love ❤️ By Seneli</footer>
-      </body>
+      </div>
     </>
   );
 };

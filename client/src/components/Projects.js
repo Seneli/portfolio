@@ -44,7 +44,7 @@ const Projects = () => {
 
   return (
     <>
-      <body id="projects-bg">
+      <div id="projects-bg">
         <Menu />
 
         <main id="home">
@@ -126,7 +126,7 @@ const Projects = () => {
           </div>
         </main>
         <footer>Made with Love ❤️ By Seneli</footer>
-      </body>
+      </div>
     </>
   );
 };
