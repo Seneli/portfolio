@@ -54,7 +54,7 @@ const About = () => {
               </div>
 
               <div className="tab tab-1">
-                <h3 className="about-color">Professional</h3>
+                <h3>Professional</h3>
                 <p>
                   This summer I will be working at{' '}
                   <span className="about-sec-color">
@@ -94,7 +94,7 @@ const About = () => {
                 </p>
               </div>
               <div className="tab tab-2">
-                <h3 className="about-color">Technical</h3>
+                <h3>Technical</h3>
                 <p>
                   My main interests are{' '}
                   <span className="about-sec-color">Web Development </span>
@@ -109,7 +109,7 @@ const About = () => {
                 </p>
               </div>
               <div className="tab tab-3">
-                <h3 className="about-color">Volunteering</h3>
+                <h3>Volunteering</h3>
                 <p>
                   I am a strong believer in using Tech as a force for good. I
                   volunteer with{' '}
@@ -119,11 +119,6 @@ const About = () => {
                   and <span className="about-sec-color">CU-Blueprint </span>.
                   WISE
                   <br />
-                  <br />I am a strong believer in using Tech as a force for
-                  good. In my spare time I like to volunteer with CU-WiSE (Women
-                  in Science and Engineering Carleton) and CUBlueprint. to
-                  support other women in STEM via affirmative action and peer
-                  support programs.
                 </p>
               </div>
             </div>

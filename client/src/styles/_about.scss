@@ -18,6 +18,12 @@
   padding-bottom: 5vh;
   margin-top: 1rem;
   box-shadow: 0 5px 5px 5px rgba(black, 0.2);
+  @include ease-out();
+
+  &:hover {
+    @include ease-out();
+    background: rgba($about-column, 0.9);
+  }
 }
 
 .about-color {
@@ -25,9 +31,8 @@
   color: $about-color;
 }
 
-.about-sec-color{
-
-    color: $about-second-color;
+.about-sec-color {
+  color: $about-second-color;
 }
 
 .dark-hover:hover {
@@ -80,22 +85,36 @@
 
     &:hover {
       @include ease-out();
-      background: lighten($primary-color, 15);
-      box-shadow: 0 0 5px 5px lighten($primary-color, 15);
+      background: darken($about-column, 15);
+      box-shadow: 0 0 5px 5px darken($about-column, 15);
+
+      .about-sec-color {
+        color: $about-color;
+      }
     }
   }
 }
 
 .tab {
-  background: rgba(lighten($primary-color, 10), 0.7);
+  background: rgba(lighten($primary-color, 15), 0.7);
   padding: 0.5rem;
   border-bottom: $about-color 5px solid;
   @include ease-out();
 
   &:hover {
-    background: lighten($primary-color, 20);
+    background: darken($about-column, 15);
+    box-shadow: 0 5px 5px 0px lighten(black, 15);
     transform: scale(1.1);
     @include ease-out();
+
+    .about-sec-color, h3 {
+      color: $about-color;
+    }
+  }
+
+  h3 {
+    color: $about-subtitle-color;
+    font-style: underline;
   }
 }
 

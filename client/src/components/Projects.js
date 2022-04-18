@@ -50,7 +50,7 @@ const Projects = () => {
         <main id="home">
           <div className="proj column">
             <h1 className="lg-heading">
-              My <span className="proj-sec-color">Projects</span>
+              My <span className="proj-color">Projects</span>
             </h1>
             <h2 className="sm-heading">
               <Typewriter

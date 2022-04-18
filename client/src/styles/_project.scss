@@ -7,10 +7,10 @@
 }
 
 .proj-color {
-  color: $project-color; 
+  color: $project-color;
 }
 
-.proj-sec-color{
+.proj-sec-color {
   color: $project-second-color;
 }
 
@@ -33,7 +33,7 @@
   @include ease-out();
 
   &:hover {
-    background: lighten($primary-color, 20);
+    background: lighten(rgb(114, 94, 68), 5);
     transform: translateY(-10px);
     box-shadow: 0 5px 15px 0px black;
     //transition: none;
@@ -43,7 +43,7 @@
     grid-area: title;
     color: lighten($project-second-color, 10);
     font-size: 30px;
-    //height: 50px; 
+    //height: 50px;
   }
 
   .github {
@@ -87,7 +87,7 @@
 
   .skill {
     cursor: pointer;
-    background: rgba($project-grey-color, 0.8);
+    background: rgba($project-skills-background-color, 0.8);
     margin: 5px 10px;
     padding: 10px 20px;
     border-radius: 25px;
@@ -95,7 +95,7 @@
     @include ease-out();
 
     &:hover {
-      background: darken($project-grey-color, 0);
+      background: darken($project-skills-background-color, 0);
       transform: scale(1.15);
       //transition: none;
 
@@ -105,7 +105,7 @@
     }
 
     &.true {
-      border: 3px $project-second-color solid;
+      border: 3px $project-skills-border-color solid;
     }
   }
 }
@@ -114,30 +114,15 @@
   border: 3px $project-color solid;
 }
 
-.Design {
-  color: rgb(247, 93, 93);
-}
-
+.Design,
 .Front-End {
-  color: rgb(247, 93, 93);
-  // //color: lightcoral;
-  // &.true {
-  //   border: 3px rgb(247, 93, 93) solid;
-  // }
+  color: rgb(189, 10, 10);
 }
 
 .Database {
-  color: rgb(48, 135, 48);
-  // //color: lightgreen;'
-  // &.true {
-  //   border: 3px rgb(48, 135, 48) solid;
-  // }
+  color: rgb(70, 141, 70);
 }
 
 .Language {
-  color: rgb(92, 92, 186);
-  //color: lightblue;
-  // &.true {
-  //   border: 3px rgb(92, 92, 186) solid;
-  // }
+  color: rgb(123, 50, 145);
 }
