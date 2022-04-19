@@ -44,6 +44,10 @@ const Projects = () => {
     state ? setState(false) : setState(true);
   };
 
+  const animationClass = (visible) => {
+    return visible ? "intro-animation" : "exit-animation";
+  }
+
   return (
     <>
       <div id="projects-bg">
@@ -93,8 +97,13 @@ const Projects = () => {
             <div className="projects">
               {projects.map((project, index) => {
                 return (
-                  isProjectVisible(project.skills) && (
-                    <div key={index} className="project">
+                  // isProjectVisible(project.skills) && (
+                    <div
+                      key={index}
+                      className={`project ${animationClass(
+                        isProjectVisible(project.skills)
+                      )}`}
+                    >
                       <h3 className="title">{project.name}</h3>
 
                       <div className="skills">
@@ -116,7 +125,7 @@ const Projects = () => {
                         <FaGithub />
                       </a>
                     </div>
-                  )
+                  // )
                 );
               })}
             </div>

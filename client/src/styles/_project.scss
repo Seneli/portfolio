@@ -14,6 +14,7 @@
 #proj-home {
   height: auto;
   padding: 4rem;
+  min-height: 100%;
 }
 
 .proj.column {
@@ -47,7 +48,7 @@
     'media description description'
     'media github github';
   box-shadow: 0 0px 8px 0px rgba(black, 0.5);
-  vertical-align: center; 
+  vertical-align: center;
   @include ease-out();
 
   &:hover {
@@ -143,4 +144,42 @@
 
 .Language {
   color: rgb(123, 50, 145);
+}
+
+
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+// @keyframes scale-out-center {
+//   0% {
+//     -webkit-transform: scale(1);
+//     transform: scale(1);
+//     opacity: 1;
+//   }
+//   100% {
+//     -webkit-transform: scale(0);
+//     transform: scale(0);
+//     opacity: 1;
+//   }
+// }
+
+.intro-animation {
+  animation: 0.25s ease-out 0s 1 scale-in-center;
+}
+
+.exit-animation {
+//   display: none; 
+//   animation: 0.25s ease-out 0s 1 scale-out-center;
+//   transition: display 0.25s; 
+  display: none; 
 }
