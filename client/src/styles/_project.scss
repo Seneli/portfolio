@@ -8,6 +8,19 @@
   color: set-text-color($primary-color);
   font-family: $block-font;
   line-height: 1.5;
+  overflow: auto;
+}
+
+#proj-home {
+  height: auto;
+  padding: 4rem;
+}
+
+.proj.column {
+  background: rgba(#ddd5c3, 0.8);
+  &:hover {
+    background: rgba(#e6d8b5, 0.9);
+  }
 }
 
 .proj-color {
@@ -19,7 +32,7 @@
 }
 
 .project {
-  background: rgb(114, 94, 68); //white;
+  background: lighten(rgb(114, 94, 68), 5); //white; //
   padding: 25px;
   border-bottom: $project-second-color 5px solid;
   margin-bottom: 15px;
@@ -37,7 +50,7 @@
   @include ease-out();
 
   &:hover {
-    background: lighten(rgb(114, 94, 68), 5);
+    background: #b08647;
     transform: translateY(-10px);
     box-shadow: 0 5px 15px 0px black;
     //transition: none;
@@ -45,7 +58,7 @@
 
   .title {
     grid-area: title;
-    color: lighten($project-second-color, 10);
+    color: $project-second-color;
     font-size: 30px;
     //height: 50px;
   }

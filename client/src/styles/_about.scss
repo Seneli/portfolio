@@ -1,6 +1,6 @@
 #about-bg {
-  background-attachment: absolute; 
-  z-index: -1; 
+  background-attachment: absolute;
+  z-index: -1;
   background: $about-image;
   height: 100%;
   background-attachment: fixed;
@@ -10,18 +10,18 @@
   color: set-text-color($primary-color);
   font-family: $block-font;
   line-height: 1.5;
-  //overflow: hidden; 
-  overflow: auto; 
+  //overflow: hidden;
+  overflow: auto;
 }
 
 #about-home {
-  //position: relative; 
+  //position: relative;
   height: auto;
   padding: 4rem;
 }
 
 .column {
-  background: rgba(white, 0.5);
+  background: rgba(white, 0.6);
   padding: 20px;
   padding-bottom: 5vh;
   margin-top: 1rem;
@@ -30,7 +30,12 @@
 
   &:hover {
     @include ease-out();
-    background: rgba($about-column, 0.9);
+    background: rgba(lighten($about-column, 5), 0.9);
+
+    // .bio p,
+    // .tab {
+    //   background: darken($about-column, 30);
+    // }
   }
 }
 
@@ -92,9 +97,10 @@
     @include ease-out();
 
     &:hover {
+      background: darken($about-column, 25);
+      box-shadow: 0 5px 5px 0px lighten(rgb(88, 88, 88), 15);
+      transform: scale(1.01);
       @include ease-out();
-      background: darken($about-column, 15);
-      box-shadow: 0 0 5px 5px darken($about-column, 15);
 
       .about-sec-color {
         color: $about-color;
@@ -121,8 +127,8 @@
     }
     li {
       background: darken($about-column, 30);
-      
-      .about-sec-color{
+
+      .about-sec-color {
         color: darken($about-color, 10);
       }
     }
@@ -143,14 +149,13 @@
     background: lighten($primary-color, 15);
     border-radius: 20px;
     padding: 10px;
-    @include ease-out; 
+    @include ease-out;
 
-    &:hover{
-      @include ease-out; 
+    &:hover {
+      @include ease-out;
       background: darken($about-column, 25);
       box-shadow: 0 5px 10px 0 lighten(black, 35);
       transform: translateY(-5px);
-
     }
   }
 }

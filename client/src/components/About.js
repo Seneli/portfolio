@@ -25,7 +25,7 @@ const About = () => {
                   strings: [
                     'Learn a bit about me',
                     'As you can tell I love cartoons',
-                    'I also love dogs and web development'
+                    'I also love fluffy dogs and meeting new people'
                   ],
                   autoStart: true,
                   loop: true

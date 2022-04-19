@@ -47,7 +47,7 @@ const Projects = () => {
       <div id="projects-bg">
         <Menu />
 
-        <main id="home">
+        <main id="proj-home">
           <div className="proj column">
             <h1 className="lg-heading">
               My <span className="proj-color">Projects</span>
