@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import Menu from './Menu';
 import Typewriter from 'typewriter-effect';
-import { skills, projects, map } from './project_list';
+import { skills, projects, map } from '../content/jsons/projects';
 import '../styles/main.scss';
 import { FaGithub } from 'react-icons/fa';
 

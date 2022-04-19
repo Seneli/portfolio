@@ -46,7 +46,7 @@
 
 .about-info {
   display: grid;
-  grid-gap: 30px;
+  grid-gap: 20px;
   grid-template-areas:
     'bioimage bio bio'
     'tab1     tab2  tab3';
@@ -105,20 +105,48 @@
   @include ease-out();
 
   &:hover {
-    background: darken($about-column, 15);
+    background: darken($about-column, 25);
     box-shadow: 0 5px 5px 0px lighten(black, 15);
-    transform: scale(1.1);
+    transform: scale(1.01);
     @include ease-out();
 
     .about-sec-color,
     h3 {
       color: $about-color;
     }
+    li {
+      background: darken($about-column, 30);
+      
+      .about-sec-color{
+        color: darken($about-color, 10);
+      }
+    }
   }
 
   h3 {
     color: $about-subtitle-color;
     font-style: underline;
+  }
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    margin: 10px 5px;
+    list-style: none;
+    background: lighten($primary-color, 15);
+    border-radius: 20px;
+    padding: 10px;
+    @include ease-out; 
+
+    &:hover{
+      @include ease-out; 
+      background: darken($about-column, 25);
+      box-shadow: 0 5px 10px 0 lighten(black, 35);
+      transform: translateY(-5px);
+
+    }
   }
 }
 
