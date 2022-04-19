@@ -11,7 +11,7 @@
 }
 
 #about-home {
-  overflow: scroll;
+  overflow: hidden;
   padding: 4rem;
 }
 
@@ -63,7 +63,7 @@
   @include ease-out();
 
   &:hover {
-    transform: scale(1.15);
+    transform: scale(1.1);
     @include ease-out();
   }
 }
