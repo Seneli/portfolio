@@ -32,7 +32,7 @@
 }
 
 .project {
-  background: lighten(rgb(114, 94, 68), 5); //white; //
+  background: lighten(rgb(114, 94, 68), 15); //white; //
   padding: 25px;
   border-bottom: $project-second-color 5px solid;
   margin-bottom: 15px;
@@ -47,10 +47,11 @@
     'media description description'
     'media github github';
   box-shadow: 0 0px 8px 0px rgba(black, 0.5);
+  vertical-align: center; 
   @include ease-out();
 
   &:hover {
-    background: #b08647;
+    background: darken(#b08647, 0);
     transform: translateY(-10px);
     box-shadow: 0 5px 15px 0px black;
     //transition: none;

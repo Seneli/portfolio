@@ -20,17 +20,17 @@
   main#home h1 {
     //margin-top: 10vh;
   }
-  .about-info {
-      grid-template-columns: repeat(1fr, 3);
-      grid-template-areas:
-        'bioimage bio bio'
-        'tab1 tab1 tab1'
-        'tab2 tab2 tab2'
-        'tab3 tab3 tab3';
-      & > * {
-        text-align: center;
-      }
-    }
+  // .about-info {
+  //     grid-template-columns: repeat(1fr, 3);
+  //     grid-template-areas:
+  //       'bioimage bio bio'
+  //       'tab1 tab1 tab1'
+  //       'tab2 tab2 tab2'
+  //       'tab3 tab3 tab3';
+  //     & > * {
+  //       text-align: center;
+  //     }
+  //   }
 }
 
 //Tablets + small laptops

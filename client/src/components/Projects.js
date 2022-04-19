@@ -5,6 +5,8 @@ import { skills, projects, map } from '../content/jsons/projects';
 import '../styles/main.scss';
 import { FaGithub } from 'react-icons/fa';
 
+import todo_list_img from '../content/images/projects/to-do-list.png';
+
 const Projects = () => {
   const [state, setState] = useState();
 
@@ -104,20 +106,15 @@ const Projects = () => {
                           );
                         })}
                       </div>
-                      <p className="description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Impedit, modi iste. Nam, qui nisi recusandae error sint
-                        vel asperiores tempore. {project.description}
-                      </p>
+                      <p className="description">{project.description}</p>
                       <img
+                        src={project.media}
                         className="image"
-                        src="https://pyxis.nymag.com/v1/imgs/168/564/d268eaf1cb956c02eba2edf728663887ce-19-bojack-todd.rsquare.w700.jpg"
-                        // {project.media}
                         alt="project media"
                       />
-                      <div className="github">
+                      <a className="github" href={project.github}>
                         <FaGithub />
-                      </div>
+                      </a>
                     </div>
                   )
                 );

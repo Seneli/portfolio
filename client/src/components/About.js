@@ -46,9 +46,9 @@ const About = () => {
                     (pronounced "Seh-neh-lee")
                   </span>
                   , and I go by <span className="about-sec-color">She/Her</span>{' '}
-                  pronouns. I like learning about web development and using tech
-                  for social good. In my spare time you can find me reading,
-                  playing the piano, watching anime or painting! ____________
+                  pronouns. <br /> <br />
+                  In my spare time you can find me reading, playing the piano,
+                  watching anime or painting!
                 </p>
               </div>
 
