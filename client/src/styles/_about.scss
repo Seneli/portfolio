@@ -1,4 +1,6 @@
 #about-bg {
+  background-attachment: absolute; 
+  z-index: -1; 
   background: $about-image;
   height: 100%;
   background-attachment: fixed;
@@ -8,10 +10,13 @@
   color: set-text-color($primary-color);
   font-family: $block-font;
   line-height: 1.5;
+  //overflow: hidden; 
+  overflow: auto; 
 }
 
 #about-home {
-  overflow: hidden;
+  //position: relative; 
+  height: auto;
   padding: 4rem;
 }
 
@@ -63,7 +68,7 @@
   @include ease-out();
 
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     @include ease-out();
   }
 }

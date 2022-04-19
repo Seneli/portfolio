@@ -54,9 +54,7 @@ const About = () => {
 
               {/* 
               I didn't always know what I wanted to do professionally, which is why I'm really happy to have found a passion for tech the way I have. 
-
               Over the past two years I have completed internships at Bell Canada and CDW, where I worked in automation and enterprise Sales. 
-
               Both internships were a lot of fun in their own way and taught me a lot. It was through these experiences that I met people like Glenn and Sam and __ who influenced me to switch programs into Computer Systems Engineering and pursue a career in software. 
               
               This summer I will be working at Amazon as an SDE intern on an AWS team, which I am really excited about. 
@@ -109,9 +107,7 @@ const About = () => {
               My current technical interests are Web Development and I also want to learn more about cloud computing. I'm open to learning pretty much anything though, since there aren't many areas of tech I find boring. 
               
               To learn more about projects I've done, check out the projects page!
-
               Its hard to put my finger on one particular thing that got me into tech. It was probably a mix of my coding classes in 1st year, my internship at Bell and the community of friends I made in software. 
-
               There was such a community to being able to talk about projects or things you were learning about or working on with others that I really enjoyed. I also like being able to make something and seeing others use it, which was harder to do in the major I started with - Architectural Engineering. 
               
               */}
@@ -156,21 +152,14 @@ const About = () => {
 
               {/* 
               I'm also a strong believer in giving back to the community. 
-
               In my spare time this year I volunteered for CU-WiSE (Carleton's Women in Science and Engineering),  CU-Blueprint (Carleton's Blueprint chapter) and PTC (Project Tech Conferences).
-
               -------
-
               At WiSE, I started a mentorship program that paired 1st year women and gender minority students in STEM to upper year mentors to provide advice and support during the transition to university. I created this program to support international students and students like me, who started university without a direction or felt imposter syndrome in male dominate fields.
               
               At WiSE I also supported most of the events held in the 2021-2022 academic year including a series of networking nights with industry hosts in February. 
-
               -------
-
               At Blueprint, I volunteered as a dev to recreate the old club website with a more modern stack of React and Styled Components. Blueprint is a group of students who create pro bono apps for non-profits, so I wanted to support this mission statement in any way I could. 
-
               -------
-
               PTC is a ______. Over the past two years, I've helped build full stack web applications for them to host their events and announce launches. I also volunteer as part of their mentorship program to give back. 
               */}
               <div className="tab tab-3">
