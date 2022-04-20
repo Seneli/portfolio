@@ -48,11 +48,11 @@ var skills = [
     area: 'Database',
     selected: true
   },
-  {
-    name: 'SQL',
-    area: 'Database',
-    selected: true
-  },
+  // {
+  //   name: 'SQL',
+  //   area: 'Database',
+  //   selected: true
+  // },
   {
     name: 'Firebase',
     area: 'Database',
@@ -68,21 +68,21 @@ var skills = [
     area: 'Language',
     selected: true
   },
-  {
-    name: 'PHP',
-    area: 'Language',
-    selected: true
-  },
+  // {
+  //   name: 'PHP',
+  //   area: 'Language',
+  //   selected: true
+  // },
   {
     name: 'Javascript',
     area: 'Language',
     selected: true
   },
-  {
-    name: 'Typescript',
-    area: 'Language',
-    selected: true
-  },
+  // {
+  //   name: 'Typescript',
+  //   area: 'Language',
+  //   selected: true
+  // },
   {
     name: 'Raspberry Pi',
     area: 'Hardware',
@@ -111,7 +111,7 @@ var projects = [
     name: 'Covid Rapid Screener',
     description:
       'The Covid Rapid Screener is a project I made with a group of 2 other students in 3rd year. This distributed embedded system can detect if a user was wearing a mask or has a body temperature over 38 degrees. The intended use case was for automated covid screening.',
-    skills: ['React', 'Python', 'Firebase', 'Raspberry Pi'],
+    skills: [ 'Figma', 'React', 'Styled Components', 'Python', 'Firebase', 'Raspberry Pi'],
     media: CRS_img,
     github: 'https://github.com/Seneli/SYSC3010W22_L3W_G4'
   },
