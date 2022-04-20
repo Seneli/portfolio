@@ -50,11 +50,11 @@ function Menu() {
               Resume
             </a>
           </li>
-          <li className={`nav-item ${showClass}`}>
+          {/* <li className={`nav-item ${showClass}`}>
             <a href="/updates" className="nav-link">
               Updates
             </a>
-          </li>
+          </li> */}
         </ul>
       </div>
     </header>
